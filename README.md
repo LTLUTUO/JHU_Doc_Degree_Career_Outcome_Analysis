@@ -52,3 +52,5 @@ The numbers in the very top is the column number of the label below, and it's ad
 ![alt text](Screen_Shot_for_Step_By_Step/Naming_For_Distant.png)
 2. Calculate the dist_1/2/3 using the function `=SUMXMY2()`
 3. Choosing the Min_Dist from the three dist using the function `=MIN()`
+4. Fill in the Cluster_match using the function `=MATCH()`
+![alt text](Screen_Shot_for_Step_By_Step/Distant_Filled.png)
