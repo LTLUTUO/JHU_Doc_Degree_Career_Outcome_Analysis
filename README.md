@@ -23,12 +23,32 @@ As we can see, some titles are messed together and some data are combined togeth
 3. Select each column and press `Ctrl + E`, the data will separate autoly.
 4. Delete the original first column
 #### Text to Columns
-1. Insert a column after the messed data column
-2. Click on `Data -> Text to Columns`
-3. Click on "Next", and select separate by **Space**
-4. Click on Finish. The data will separate autoly.
+5. Insert a column after the messed data column
+6. Click on `Data -> Text to Columns`
+7. Click on "Next", and select separate by **Space**
+8. Click on Finish. The data will separate autoly.
+
+Below is the preview of the data after cleaning:
+![alt text](Screen_Shot_for_Step_By_Step/Data_after_Cleaning.png)
 ### Calculate the Standardize Value
-we will need the standardize value to calculate clusters. In order to calculate the standardize value using the `=STANDARDIZE()` in excel, we need the average and standard deviation for each column. 
+For analysis, I used the percentage instead of the number of the outcome. We will need the standardize value to calculate clusters. In order to calculate the standardize value using the `=STANDARDIZE()` in excel, we need the average and standard deviation for each column. 
 1. insert two rows above the data and its label, name them as **Average** and **Standard Deviation**
 2. Calculate the average and standard deviation for each column with `=AVERAGE()` and `=STDEV()`
+3. Create columns after all the data, name them as "% of _Industry_"
+4. Fill the cells with the standardize function `=STANDARDIZE(x,mean,standard_dev)`
 
+Below is the preview of the layout of the standardize value :
+![alt text](Screen_Shot_for_Step_By_Step/Calculate_Standardize_Value.png)
+### Preperation for Cluster
+Before using Excel Solver to calculate the optimized cluster combinations, we need to format the worksheet. The idea here is to list out three rows of data that act as the center of the clusters. Then, the total distant for each program to each cluster center. After that, the min_distant is selected and the sum of distant is calculated.
+#### The Cluster Center
+1. Create five column in the top of the worksheet, and name them like this:
+![alt text](Screen_Shot_for_Step_By_Step/Naming_for_cluster.png)
+The numbers in the very top is the column number of the label below, and it's add for the convienient of using Vlookup. ID is related to the number of the order of programs.
+2. Randomly assign the ID in the ID column. Use `=Vlookup()` to fill all the other cells in the area.
+![alt text](Screen_Shot_for_Step_By_Step/Cluster_Center_Filled.png)
+#### The Distant Part
+1. Insert five columns after the data, and name them like this:
+![alt text](Screen_Shot_for_Step_By_Step/Naming_For_Distant.png)
+2. Calculate the dist_1/2/3 using the function `=SUMXMY2()`
+3. Choosing the Min_Dist from the three dist using the function `=MIN()`
