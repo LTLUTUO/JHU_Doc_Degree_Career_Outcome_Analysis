@@ -60,3 +60,4 @@ The numbers in the very top is the column number of the label below, and it's ad
 3. Initial Excel Solver with `Data -> Solver`
 4. Set up the parameters:
 ![alt text](Screen_Shot_for_Step_By_Step/Slover_Setup.png)
+Select the cell containing the function under **Sum_of_Min_Dist** as **Set Objective**, and we want to minimize it. Select the three cells that contain the **ID** information in the **By Changing Variable Cells**. Add three constraints under: **ID** value should be equal or smaller than 21, equal or bigger than 1, and it should be an integer.
