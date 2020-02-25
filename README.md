@@ -18,7 +18,7 @@ First we need to move tha data we want to analyze into a new worksheet and clean
 ![alt text](Screen_Shot_for_Step_By_Step/Data_Before_CLeaning.png)
 As we can see, some titles are messed together and some data are combined together in one column. I will use two methods to separate them. For the first columni where program name and data are messed together, I used a function in excel called `Flash Fill`, the short-cut for it is `Ctrl + E` for both Mac and Windows users. For the rest of the column where the data are messed together, I used `Text to Columns`.
 #### Flash Fill
-1. Insert 3 columns after the first column
+1. Insert three columns after the first column
 2. Manually type in the program name, first data and the second data in the three new column
 3. Select each column and press `Ctrl + E`, the data will separate autoly.
 4. Delete the original first column
@@ -27,4 +27,8 @@ As we can see, some titles are messed together and some data are combined togeth
 2. Click on `Data -> Text to Columns`
 3. Click on "Next", and select separate by **Space**
 4. Click on Finish. The data will separate autoly.
-### Calculate the 
+### Calculate the Standardize Value
+we will need the standardize value to calculate clusters. In order to calculate the standardize value using the `=STANDARDIZE()` in excel, we need the average and standard deviation for each column. 
+1. insert two rows above the data and its label, name them as **Average** and **Standard Deviation**
+2. Calculate the average and standard deviation for each column with `=AVERAGE()` and `=STDEV()`
+
