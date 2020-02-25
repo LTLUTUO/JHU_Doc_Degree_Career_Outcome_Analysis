@@ -54,3 +54,9 @@ The numbers in the very top is the column number of the label below, and it's ad
 3. Choosing the Min_Dist from the three dist using the function `=MIN()`
 4. Fill in the Cluster_match using the function `=MATCH()`
 ![alt text](Screen_Shot_for_Step_By_Step/Distant_Filled.png)
+### Clustering with Solver
+1. Choose a cell and name it **Sum_of_Min_Dist**
+2. Below it, calculate the sum of all Min_Dist using the function `=SUM()`
+3. Initial Excel Solver with `Data -> Solver`
+4. Set up the parameters:
+![alt text](Screen_Shot_for_Step_By_Step/Slover_Setup.png)
