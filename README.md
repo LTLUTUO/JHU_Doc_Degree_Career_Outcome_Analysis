@@ -14,5 +14,17 @@ All the data in this research are extracted from [Next Generation Life Science (
 [Tabula](https://tabula.technology/) is used to convert the pdf file into [csv](JHU_Doctoral_Career_Outcome_Cluster_Analysis.csv) version. At last, a [excel version](JHU_Doctoral_Career_Outcome_Cluster_Analysis.xlsx) of it is being used for analysis.
 ## Step by Step Excel Manipulation
 ### Data Cleaning
-First we need to move tha data we want to analyze into a new worksheet and clean it up, format it so we can use it for further processes.
-1. 
+First we need to move tha data we want to analyze into a new worksheet and clean it up, format it so we can use it for further processes. When we first paste the data we needed in a new worksheet, it would look like this:
+![alt text](Screen_Shot_for_Step_By_Step/Data_Before_CLeaning.png)
+As we can see, some titles are messed together and some data are combined together in one column. I will use two methods to separate them. For the first columni where program name and data are messed together, I used a function in excel called `Flash Fill`, the short-cut for it is `Ctrl + E` for both Mac and Windows users. For the rest of the column where the data are messed together, I used `Text to Columns`.
+#### Flash Fill
+1. Insert 3 columns after the first column
+2. Manually type in the program name, first data and the second data in the three new column
+3. Select each column and press `Ctrl + E`, the data will separate autoly.
+4. Delete the original first column
+#### Text to Columns
+1. Insert a column after the messed data column
+2. Click on `Data -> Text to Columns`
+3. Click on "Next", and select separate by **Space**
+4. Click on Finish. The data will separate autoly.
+### Calculate the 
