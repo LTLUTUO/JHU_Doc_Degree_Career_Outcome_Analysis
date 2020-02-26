@@ -2,6 +2,7 @@
 ## Introduction
 This project focuses on the similarity of the career outcome for different doctoral program at Johns Hopkins University (JHU) in 10 years. It can serve as a guideline for multiple things, such as resource distribution for career advising, networking events, cross-program alumni reunion, etc. I grouped 21 doctoral programs in the area of life science in JHU into three clusters, for which you can see below:
 ![alt text](Screen_Shot_For_Cluster_Visualization.png)
+The further steps of the reasearch could be about what is the connection between the companies people from different program go to under the same cluster. It requires further and more detail information about the career outcome of the programs and companies analysis. With this further research, it can help pairing up or teaming people from different programs to maximize their career outcome.
 ## Outline of the Analysis
 * Industry question: how can JHU maximize its career advising resources for doctoral programs in life science? How can they manage the alumni networking events wisely so that everyone can get the most out of those events?
 * Data question: In a ten years point, what are the programs that have similar distributions for career outcomes?
