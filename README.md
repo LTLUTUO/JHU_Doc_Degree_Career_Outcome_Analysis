@@ -62,4 +62,15 @@ The numbers in the very top is the column number of the label below, and it's ad
 ![alt text](Screen_Shot_for_Step_By_Step/Slover_Setup.png)
 Select the cell containing the function under **Sum_of_Min_Dist** as **Set Objective**, and we want to minimize it. Select the three cells that contain the **ID** information in the **By Changing Variable Cells**. Add three constraints under: **ID** value should be **equal or smaller than 21**, **equal or bigger than 1**, and it should be an **integer**.
 5. Click **Solve**!
-### Visualization
+### Simple Visualization
+At last, we can make a simple visualization to show the different clusters. I did it with conditional formatting.
+1. Select all the area with data
+2. Add conditional formatting by clicking `Home -> Conditional Formatting -> New Rules`
+3. In the style, select **Classic**
+4. In the format section, select **Use a formula to determine which cells to format**
+5. In the formula section, type in `=$V12(Cells under Cluster_match)=1`
+6. Select your preferrable way to highlight the rows which apply
+7. Repeat steps one through six for if cluster_match = 2/3
+
+In the end, the whole worksheet would look like this:
+![alt text](Screen_Shot_For_Cluster_Visualization.png)
